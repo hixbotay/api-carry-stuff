@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="filter">
+		<field
+			name="search"
+			type="text"
+			label="COM_JBACKEND_FILTER"
+			hint="JSEARCH_FILTER_LABEL"
+			class="js-stools-search-string"
+		/>
+	</fields>
+	<fields name="list">
+		<field
+			name="fullordering"
+			type="list"
+			label="JGLOBAL_SORT_BY"
+			statuses="*,0,1,2,-2"
+			description="JGLOBAL_SORT_BY"
+			onchange="this.form.submit();"
+			default="ordering ASC"
+			>
+			<option value="">JGLOBAL_SORT_BY</option>
+			<option value="l.id ASC">COM_JBACKEND_HEADING_LOGS_ID_ASC</option>
+			<option value="l.id DESC">COM_JBACKEND_HEADING_LOGS_ID_DESC</option>
+			<option value="l.endpoint ASC">COM_JBACKEND_HEADING_LOGS_ENDPOINT_ASC</option>
+			<option value="l.endpoint DESC">COM_JBACKEND_HEADING_LOGS_ENDPOINT_DESC</option>
+			<option value="l.access_type ASC">COM_JBACKEND_HEADING_LOGS_ACCESS_TYPE_ASC</option>
+			<option value="l.access_type DESC">COM_JBACKEND_HEADING_LOGS_ACCESS_TYPE_DESC</option>
+			<option value="l.request_time ASC">COM_JBACKEND_HEADING_LOGS_REQUEST_TIME_ASC</option>
+			<option value="l.request_time DESC">COM_JBACKEND_HEADING_LOGS_REQUEST_TIME_DESC</option>
+			<option value="l.error_code ASC">COM_JBACKEND_HEADING_LOGS_ERROR_CODE_ASC</option>
+			<option value="l.error_code DESC">COM_JBACKEND_HEADING_LOGS_ERROR_CODE_DESC</option>
+			<option value="l.user_id ASC">COM_JBACKEND_HEADING_LOGS_USER_ID_ASC</option>
+			<option value="l.user_id DESC">COM_JBACKEND_HEADING_LOGS_USER_ID_DESC</option>
+			<option value="l.key ASC">COM_JBACKEND_HEADING_LOGS_KEY_ASC</option>
+			<option value="l.key DESC">COM_JBACKEND_HEADING_LOGS_KEY_DESC</option>
+			<option value="l.action ASC">COM_JBACKEND_HEADING_LOGS_ACTION_ASC</option>
+			<option value="l.action DESC">COM_JBACKEND_HEADING_LOGS_ACTION_DESC</option>
+			<option value="l.module ASC">COM_JBACKEND_HEADING_LOGS_MODULE_ASC</option>
+			<option value="l.module DESC">COM_JBACKEND_HEADING_LOGS_MODULE_DESC</option>
+			<option value="l.resource ASC">COM_JBACKEND_HEADING_LOGS_RESOURCE_ASC</option>
+			<option value="l.resource DESC">COM_JBACKEND_HEADING_LOGS_RESOURCE_DESC</option>
+			<option value="l.duration ASC">COM_JBACKEND_HEADING_LOGS_DURATION_ASC</option>
+			<option value="l.duration DESC">COM_JBACKEND_HEADING_LOGS_DURATION_DESC</option>
+		</field>
+		<field
+			name="limit"
+			type="limitbox"
+			class="inputbox input-mini"
+			default="25"
+			label="COM_JBACKEND_LIST_LIMIT"
+			description="COM_JBACKEND_LIST_LIMIT_DESC"
+			onchange="this.form.submit();"
+		/>
+	</fields>
+</form>

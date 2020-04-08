@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+  <fieldset
+    name="general"
+    label="COM_JBACKEND_FIELDSET_CONFIG_GENERAL_OPTIONS_LABEL"
+    description="COM_JBACKEND_FIELDSET_CONFIG_GENERAL_OPTIONS_DESC">
+    <field
+      name="default_access_type"
+      type="radio"
+      class="btn-group btn-group-yesno"
+      default="key"
+      label="COM_JBACKEND_FIELD_DEFAULT_ACCESS_TYPE_LABEL"
+      description="COM_JBACKEND_FIELD_DEFAULT_ACCESS_TYPE_DESC">
+      <option value="free">COM_JBACKEND_FIELD_DEFAULT_ACCESS_TYPE_FREE</option>
+      <option value="user">COM_JBACKEND_FIELD_DEFAULT_ACCESS_TYPE_USER</option>
+      <option value="key">COM_JBACKEND_FIELD_DEFAULT_ACCESS_TYPE_KEY</option>
+    </field>
+    <field name="default_enable_trace"
+      type="radio"
+      class="btn-group btn-group-yesno"
+      default="0"
+      label="COM_JBACKEND_FIELD_DEFAULT_ENABLE_TRACE_LABEL"
+      description="COM_JBACKEND_FIELD_DEFAULT_ENABLE_TRACE_DESC">
+      <option value="1">JYES</option>
+      <option value="0">JNO</option>
+    </field>
+    <field name="default_force_ssl"
+      type="radio"
+      class="btn-group btn-group-yesno"
+      default="0"
+      label="COM_JBACKEND_FIELD_DEFAULT_FORCE_SSL_LABEL"
+      description="COM_JBACKEND_DEFAULT_FIELD_FORCE_SSL_DESC">
+      <option value="1">JYES</option>
+      <option value="0">JNO</option>
+    </field>
+  </fieldset>
+
+  <fieldset
+    name="permissions"
+    label="JCONFIG_PERMISSIONS_LABEL"
+    description="JCONFIG_PERMISSIONS_DESC"
+  >
+    <field
+      name="rules"
+      type="rules"
+      label="JCONFIG_PERMISSIONS_LABEL"
+      class="inputbox"
+      validate="rules"
+      filter="rules"
+      component="com_jbackend"
+      section="component"
+    />
+  </fieldset>
+</config>

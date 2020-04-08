@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="jbackend" method="upgrade">
+    <name>plg_jbackend_user</name>
+    <author>selfget.com</author>
+    <creationDate>July 2015</creationDate>
+    <copyright>Copyright (C) 2014 - 2015 selfget.com</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <authorEmail>info@selfget.com</authorEmail>
+    <authorUrl>http://www.selfget.com</authorUrl>
+    <version>2.1.3</version>
+    <description>PLG_JBACKEND_USER_DESCRIPTION</description>
+
+    <languages>
+        <language tag="en-GB">language/en-GB/en-GB.plg_jbackend_user.ini</language>
+        <language tag="en-GB">language/en-GB/en-GB.plg_jbackend_user.sys.ini</language>
+    </languages>
+
+  <files>
+    <filename plugin="user">user.php</filename>
+    <filename>index.html</filename>
+  </files>
+
+  <config>
+  </config>
+
+</extension>

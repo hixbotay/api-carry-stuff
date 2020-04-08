@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="bookpro" method="upgrade">
+    <name>JBSMS</name>
+    <creationDate>Jan 2013</creationDate>
+	<author>Joombooking.com</author>
+	<authorEmail>quan@joombooking.com</authorEmail>
+	<authorUrl>http://www.joombooking.com</authorUrl>
+	<copyright>Joombooking ltd</copyright>
+    <description>BookPro Sms Notification</description>
+    <files>
+        <filename plugin="product_sms">product_sms.php</filename>
+        <folder>lib</folder>
+    </files>
+    <config>
+        <fields name="params" >
+            <fieldset name="basic">			
+				<field name="user" type="text" default="" label="User" />				
+				<field name="password" type="password" default="" label="Password"/>				
+				<field name="api_id" type="text" default="" label="API Id"/>	
+				<field name="from_number" type="text" default="" label="From Number"/>	
+				
+				<field name="country_code" type="text" default="" label="Country Phone Code"/>	
+				
+				<field name="gateway" type="list" default="1" label="Gateway Sms">
+					<option value="1">Clickatell</option>
+					<option value="2">Twilio</option>
+				</field>
+				<!-- 
+				<field name="pay_status" type="list" default="SUCCESS" label="Send SMS with Payment status">
+					<option value="SUCCESS">Paid</option>
+					<option value="PENDING">Not Paid</option>
+				</field>
+				
+				<field name="type" type="list" label="Send To" default="2">
+				<option value="1">Both</option>
+				<option value="2">Customer</option>
+				<option value="3">Admin</option>
+				</field>
+				
+				<field name="cancel" type="textarea" rows="8" cols="40" label="Cancel SMS Template" value="Your booking is cancelled"/>				
+				<field name="customer" type="textarea" rows="8" cols="40" label="Customer SMS Template" 
+					value="Ticket No.: {order_nu&#13;&#10;mber}Trip: {route}T&#13;&#10;otal: {total}&#13;&#10;Buyer: {customer}&#13;&#10;Email: {email}&#13;&#10;Call +1 xxx xxx for support"/>
+					-->	
+            </fieldset>
+        </fields>
+    </config>
+</extension>

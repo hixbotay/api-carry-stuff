@@ -1,0 +1,29 @@
+{
+	"gateways":[
+		{"code":"paypal", "enabled":"1"}, 
+		{"code":"stripe", "enabled":"0"}
+		],
+	"methods":[
+	{"code":"paypal", "name":{
+						"en":"Paypal account", 
+						"fr":"Compte Paypal"}, 
+					"enabled":"0"
+					}, 
+	{"code":"stripe", "name":{
+						"en":"Stripe account", 
+						"fr":"Compte Stripe"}, 
+					"enabled":"0"
+					}, 
+	{"code":"creditcard", "name":{
+						"en":"Credit Card", 
+						"fr":"Carte bancaire" }, 
+					"enabled":"1"
+					},
+	{"code":"cash", "name":{
+						"en":"In cash", 
+						"fr":"En espèces"
+						},
+					"enabled":"0"
+					}
+	]
+}

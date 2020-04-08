@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="bookpro" method="upgrade">
+	<name>Payment braintree</name>
+	<version>1.0</version>
+	<creationDate>Jan 2016</creationDate>
+	<author>Joombooking.com</author>
+	<authorEmail>quan@joombooking.com</authorEmail>
+	<authorUrl>http://www.joombooking.com</authorUrl>
+	<copyright>Joombooking ltd</copyright>
+	<license>GNU General Public License v3 or later versions</license>
+	<description>braintree payment plugin for joomla</description>
+	<files>
+		<filename plugin="payment_braintree">payment_braintree.php</filename>
+		<folder>lib</folder>
+		<folder>payment_braintree</folder>
+		<folder>guide</folder>
+	</files>
+
+	<languages folder="languages">
+		<language tag="en-GB">en-GB.plg_bookpro_payment_braintree.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="display_name" type="text" size="30" default="Payment braintree"
+					label="Display Name" description="Name appears at payment page of frontend" />
+					
+				<field name="merchantId" type="text" default=""	label="Merchant Id" />
+				<field name="publicKey" type="text" default="" label="Public key" />					
+				<field name="privateKey" type="text" default=""	label="Private key" />
+				<field name="test_mode" type="radio" default="1" label="Test mode"
+					class="btn-group">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+
+			</fieldset>
+		</fields>
+	</config>
+</extension>

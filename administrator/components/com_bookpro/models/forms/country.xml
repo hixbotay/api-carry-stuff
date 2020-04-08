@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <fieldset>
+        <field name="id" type="hidden" readonly="true" />
+         <field name="country_name" type="text" class="inputbox" size="40" label="COM_BOOKPRO_COUNTRY_NAME"
+            description="COM_BOOKPRO_COUNTRY_NAME" required="true" />
+         
+         <field name="country_code" type="text" class="inputbox" size="40" label="COM_BOOKPRO_COUNTRY_CODE"
+            description="COM_BOOKPRO_COUNTRY_CODE" required="true" />   
+            
+         <field name="region_id" type="text" class="inputbox" size="40" label="COM_BOOKPRO_COUNTRY_REGION"
+        description="COM_BOOKPRO_COUNTRY_REGION"/>         
+         
+         <field name="visainfo" type="text" class="inputbox" size="40" label="COM_BOOKPRO_COUNTRY_VISA_INFORMATION"
+            description="COM_BOOKPRO_COUNTRY_VISA_INFORMATION" required="false" />
+         
+         <field name="desc" type="editor" buttons="true" hide="pagebreak,readmore" class="inputbox" 
+			filter="JComponentHelper::filterText" label="COM_BOOKPRO_APP_DESCRIPTION"
+            description="COM_BOOKPRO_APP_DESCRIPTION" />
+         
+         <field name="flag" type="media" directory=""
+				hide_none="1" label="COM_BOOKPRO_COUNTRY_FLAG"
+            	description="COM_BOOKPRO_COUNTRY_FLAG" />
+         
+         <field name="state" type="radio"
+			label="JSTATUS" description="JFIELD_PUBLISHED_DESC"
+			class="inputbox small" size="1" default="1" >
+			<option value="1">JPUBLISHED</option>
+			<option value="0">JUNPUBLISHED</option>			
+		</field>
+         
+    </fieldset>
+</form>

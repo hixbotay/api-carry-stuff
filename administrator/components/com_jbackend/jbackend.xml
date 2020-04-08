@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="component" method="upgrade">
+    <name>com_jbackend</name>
+    <author>selfget.com</author>
+    <creationDate>July 2015</creationDate>
+    <copyright>Copyright (C) 2014 - 2015 selfget.com</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <authorEmail>info@selfget.com</authorEmail>
+    <authorUrl>http://www.selfget.com</authorUrl>
+    <version>2.1.3</version>
+    <description>COM_JBACKEND_DESCRIPTION</description>
+
+    <!-- install/uninstall/update script -->
+    <scriptfile>script.php</scriptfile>
+
+    <!-- installation part -->
+    <install>
+        <sql>
+          <file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+        </sql>
+    </install>
+
+    <update>
+        <schemas>
+          <schemapath type="mysql">sql/updates/mysql</schemapath>
+        </schemas>
+    </update>
+
+    <!-- user part -->
+    <files folder="site">
+        <filename>controller.php</filename>
+        <filename>index.html</filename>
+        <filename>jbackend.php</filename>
+        <filename>router.php</filename>
+        <folder>controllers</folder>
+        <folder>helpers</folder>
+        <folder>models</folder>
+        <folder>views</folder>
+    </files>
+
+    <languages folder="site">
+        <language tag="en-GB">language/en-GB/en-GB.com_jbackend.ini</language>
+    </languages>
+
+    <!-- administration part -->
+    <administration>
+
+    <menu view="dashboard" img="components/com_jbackend/images/jbackend.png">COM_JBACKEND_MENU_JBACKEND</menu>
+    <submenu>
+        <menu view="keys">COM_JBACKEND_MENU_KEYS</menu>
+        <menu view="logs">COM_JBACKEND_MENU_LOGS</menu>
+    </submenu>
+
+    <files folder="admin">
+        <filename>access.xml</filename>
+        <filename>config.xml</filename>
+        <filename>controller.php</filename>
+        <filename>index.html</filename>
+        <filename>jbackend.php</filename>
+        <folder>controllers</folder>
+        <folder>helpers</folder>
+        <folder>images</folder>
+        <folder>models</folder>
+        <folder>sql</folder>
+        <folder>tables</folder>
+        <folder>views</folder>
+    </files>
+
+    <languages folder="admin">
+        <language tag="en-GB">language/en-GB/en-GB.com_jbackend.ini</language>
+        <language tag="en-GB">language/en-GB/en-GB.com_jbackend.sys.ini</language>
+    </languages>
+
+    </administration>
+
+</extension>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+	<fieldset addfieldpath="/administrator/components/com_bookpro/elements">
+
+		<field name="id" type="hidden" required="true"
+			readonly="true" />
+		<field id="url" name="url" type="text" required="false"
+			label="URL" description="URL"
+			class="input" size="40" />
+		<field id="name" name="name" type="text" required="true"
+			label="Name" description="Name"
+			class="input" size="40" />
+
+		
+
+		<field id="customer_id" name="customer_id" type="text" required="false"
+			label="Customer_id" description="customer_id"
+			class="input" size="40" />
+
+	</fieldset>
+</form>

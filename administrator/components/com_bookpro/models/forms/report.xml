@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <fieldset addfieldpath="/administrator/components/com_bookpro/elements">
+    	<field name="id" type="hidden" label="JGLOBAL_FIELD_ID_LABEL" description="JGLOBAL_FIELD_ID_DESC" size="10" readonly="true" />    
+		<field name="name" type="text" label="COM_BOOKPRO_CUSTOMER_NAME" size="60" description="COM_BOOKPRO_CUSTOMER_NAME" />
+		<field name="desc" type="textarea" label="COM_BOOKPRO_REPORT_DESCRIPTION" rows="10" cols="30" description="COM_BOOKPRO_REPORT_DESCRIPTION"/>
+		<field name="created" type="text" label="COM_BOOKPRO_REPORT_CREATED_TIME" size="60" description="COM_BOOKPRO_REPORT_CREATED_TIME" readonly="true"/>
+	
+    </fieldset>
+	
+</form>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_JBACKEND_VIEW_REQUEST_TITLE">
+		<message>
+			<![CDATA[COM_JBACKEND_VIEW_REQUEST_DESC]]>
+		</message>
+	</layout>
+	<fields name="params">
+		<fieldset name="basic"
+			label="COM_JBACKEND_VIEW_REQUEST_BASIC_SETTINGS_LABEL"
+			addfieldpath="/administrator/components/com_jbackend/models/fields">
+			<field
+				name="access_type"
+				type="radio"
+				class="btn-group"
+				default="key"
+				label="COM_JBACKEND_VIEW_REQUEST_ACCESS_TYPE_LABEL"
+				description="COM_JBACKEND_VIEW_REQUEST_ACCESS_TYPE_DESC">
+				<option value="free">COM_JBACKEND_VIEW_REQUEST_ACCESS_TYPE_FREE</option>
+				<option value="user">COM_JBACKEND_VIEW_REQUEST_ACCESS_TYPE_USER</option>
+				<option value="key">COM_JBACKEND_VIEW_REQUEST_ACCESS_TYPE_KEY</option>
+			</field>
+			<field name="enable_trace"
+				type="radio"
+				class="btn-group btn-group-yesno"
+				default="0"
+				label="COM_JBACKEND_VIEW_REQUEST_ENABLE_TRACE_LABEL"
+				description="COM_JBACKEND_VIEW_REQUEST_ENABLE_TRACE_DESC">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			<field name="enable_cors"
+				type="radio"
+				class="btn-group btn-group-yesno"
+				default="0"
+				label="COM_JBACKEND_VIEW_REQUEST_ENABLE_CORS_LABEL"
+				description="COM_JBACKEND_VIEW_REQUEST_ENABLE_CORS_DESC">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			<field name="force_ssl"
+				type="radio"
+				class="btn-group btn-group-yesno"
+				default="0"
+				label="COM_JBACKEND_VIEW_REQUEST_FORCE_SSL_LABEL"
+				description="COM_JBACKEND_VIEW_REQUEST_FORCE_SSL_DESC">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			<field name="enabled_modules"
+				type="radio"
+				class="btn-group btn-group-yesno"
+				default="1"
+				label="COM_JBACKEND_VIEW_REQUEST_ENABLED_MODULES_LABEL"
+				description="COM_JBACKEND_VIEW_REQUEST_ENABLED_MODULES_DESC">
+				<option value="1">JALL</option>
+				<option value="0">COM_JBACKEND_VIEW_REQUEST_ENABLED_MODULES_SELECTED</option>
+			</field>
+			<field name="selected_modules"
+				type="ModuleList"
+				multiple="true"
+				label="COM_JBACKEND_VIEW_REQUEST_SELECTED_MODULES_LABEL"
+				description="COM_JBACKEND_VIEW_REQUEST_SELECTED_MODULES_DESC" />
+		</fieldset>
+	</fields>
+</metadata>

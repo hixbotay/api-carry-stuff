@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+	<fieldset addfieldpath="/administrator/components/com_bookpro/elements">
+		<field name="id" type="hidden" default="0" required="true"
+			readonly="true" />
+
+			
+		<field id="name" name="name" type="text" required="true"
+			label="COM_BOOKPRO_CUSTOMER_NAME" description="COM_BOOKPRO_CUSTOMER_NAME"
+			class="input" size="40" />
+		<field id="email" name="email" type="text"  required="true"
+			label="COM_BOOKPRO_CUSTOMER_EMAIL" description="COM_BOOKPRO_CUSTOMER_EMAIL"
+			class="input" size="40" />
+		<field id="address" name="address" type="text" required="false"
+			label="COM_BOOKPRO_CUSTOMER_ADDRESS" description="COM_BOOKPRO_CUSTOMER_ADDRESS"
+			class="input" size="40" />
+		<field id="city" name="city" type="text" required="false"
+			label="COM_BOOKPRO_CUSTOMER_CITY" description="COM_BOOKPRO_CUSTOMER_CITY"
+			class="input" size="40" />
+		<field id="post_code" name="post_code" type="text" required="false"
+			label="COM_BOOKPRO_CUSTOMER_POSTALCODE" description="COM_BOOKPRO_CUSTOMER_POSTALCODE"
+			class="input" size="40" />	
+		<field id="phone" name="phone" type="text" required="false"
+			label="COM_BOOKPRO_CUSTOMER_PHONE" description="COM_BOOKPRO_CUSTOMER_PHONE"
+			class="input" size="40" />
+			
+		<field id="mobile" name="mobile" type="text" required="false"
+			label="COM_BOOKPRO_CUSTOMER_MOBI" description="COM_BOOKPRO_CUSTOMER_MOBI"
+			class="input" size="40" />
+			
+		</fieldset>	
+		<field id="company_name" name="company_name" type="text" required="false"
+			label="COM_BOOKPRO_CUSTOMER_SOCIALREASON" description="COM_BOOKPRO_CUSTOMER_SOCIALREASON"
+			class="input" size="40" />
+			
+		
+		<field id="function" name="function" type="text" required="false"
+			label="COM_BOOKPRO_CUSTOMER_FUNCTION" description="COM_BOOKPRO_CUSTOMER_FUNCTION"
+			class="input" size="40" />
+			
+		
+		<field id="registration_date" name="registration_date" type="text" readonly="true"
+			label="COM_BOOKPRO_CUSTOMER_REGISTRATION_DATE" description="COM_BOOKPRO_CUSTOMER_REGISTRATION_DATE"
+			class="input" size="16" format="%Y-%m-%d" />
+        <field id="password" name="password" type="password" required="false"
+			label="COM_BOOKPRO_CUSTOMER_PASSWORD" description="COM_BOOKPRO_CUSTOMER_PASSWORD"
+			class="input" size="40" />
+		 <field name="password_confirm" type="password" required="false"
+			label="COM_BOOKPRO_CUSTOMER_PASSWORD_CONFIRM" description="COM_BOOKPRO_CUSTOMER_PASSWORD_CONFIRM"
+			class="input" size="40" />
+			
+		<field id="states" name="states" type="text" required="false"
+			label="COM_BOOKPRO_CUSTOMER_STATES" description="COM_BOOKPRO_CUSTOMER_STATES"
+			class="input" size="40" />
+
+		<field id="country_id" name="country_id" type="country"
+			required="false" label="COM_BOOKPRO_CUSTOMER_COUNTRY" description="COM_BOOKPRO_CUSTOMER_COUNTRY"
+			class="input" size="40" />
+			
+		<field name="user_id" type="hidden" />
+
+		<field name="state" type="list" label="COM_BOOKPRO_CUSTOMER_APPROVAL" class="chzn-color-state"
+			size="1" default="0">
+			<option value="1">COM_BOOKPRO_CUSTOMER_APPROVAL_VALUE</option>
+			<option value="0">COM_BOOKPRO_CUSTOMER_APPROVAL_NOT</option>
+		</field>
+		<field id="title" name="title" type="text" required="false"
+			label="COM_BOOKPRO_SELECT_TITLE" description="COM_BOOKPRO_SELECT_TITLE"
+			class="input" size="40" />
+		<field id="active" name="active" type="radio" required="false"
+			label="Active this user" description="Active this user"
+			class="btn-group" size="40">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</field>
+		
+		<field id="user_type" name="user_type" type="list"
+			label="COM_BOOKPRO_CUSTOMER_TYPE" default="1" readonly="true">
+			<option value="1">COM_BOOKPRO_TYPE_PARTICULAR</option>
+			<option value="2">COM_BOOKPRO_TYPE_ENTERPRISE</option>
+			<option value="3">COM_BOOKPRO_TYPE_DRIVER</option>
+		</field>
+
+</form>

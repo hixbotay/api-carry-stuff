@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form enctype="multipart/form-data">
+            <fieldset>
+                  <field
+                        name="fileUpload"
+                        type="file"
+                        label="Upload"
+                        description="COM_BOOKPRO_UPLOAD_DETAIL"
+                        size="40"                       
+                        required="true"
+                />
+            </fieldset>
+   </form>

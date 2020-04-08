@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <fieldset addfieldpath="/administrator/components/com_bookpro/elements">
+    	<field name="id" type="hidden" label="JGLOBAL_FIELD_ID_LABEL" description="JGLOBAL_FIELD_ID_DESC" size="10" default="0" readonly="true" />    
+        
+
+    <field name="order_id" type="hidden" label="COM_BOOKPRO_TRANSACTION_ORDER_ID" size="60"/>
+	<field name="created" type="text" label="COM_BOOKPRO_ORDERS_CREATED_TIME" size="60" description="COM_BOOKPRO_ORDERS_CREATED_TIME" readonly="true"/>
+	<field name="tx_id" type="text" label="COM_BOOKPRO_TRANSACTION_ID" size="60" description="COM_BOOKPRO_TRANSACTION_ID" readonly="true"/>
+    <field name="total" type="text" label="COM_BOOKPRO_ORDERS_TOTAL" size="60"
+              description="COM_BOOKPRO_ORDERS_TOTAL" required="true" />
+    <field name="success" type="list" label="COM_BOOKPRO_TRANSACTION_SUCCESS" size="1"
+              description="COM_BOOKPRO_TRANSACTION_SUCCESS" required="true" >
+			<option value="0">No</option>
+			<option value="1">Yes</option>	
+	</field>          
+	
+    </fieldset>
+	
+</form>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="filter">
+		<field
+			name="search"
+			type="text"
+			label="COM_JBACKEND_FILTER"
+			hint="JSEARCH_FILTER_LABEL"
+			class="js-stools-search-string"
+		/>
+		<field
+			name="state"
+			type="status"
+			label="JOPTION_SELECT_PUBLISHED"
+			statuses="*,0,1,2,-2"
+			description="JOPTION_SELECT_PUBLISHED_DESC"
+			onchange="this.form.submit();"
+			>
+			<option value="">JOPTION_SELECT_PUBLISHED</option>
+		</field>
+	</fields>
+	<fields name="list">
+		<field
+			name="fullordering"
+			type="list"
+			label="JGLOBAL_SORT_BY"
+			statuses="*,0,1,2,-2"
+			description="JGLOBAL_SORT_BY"
+			onchange="this.form.submit();"
+			default="ordering ASC"
+			>
+			<option value="">JGLOBAL_SORT_BY</option>
+			<option value="ordering ASC">JGRID_HEADING_ORDERING_ASC</option>
+			<option value="ordering DESC">JGRID_HEADING_ORDERING_DESC</option>
+			<option value="k.published ASC">JSTATUS_ASC</option>
+			<option value="k.published DESC">JSTATUS_DESC</option>
+			<option value="k.id ASC">COM_JBACKEND_HEADING_KEYS_ID_ASC</option>
+			<option value="k.id DESC">COM_JBACKEND_HEADING_KEYS_ID_DESC</option>
+			<option value="k.key ASC">COM_JBACKEND_HEADING_KEYS_KEY_ASC</option>
+			<option value="k.key DESC">COM_JBACKEND_HEADING_KEYS_KEY_DESC</option>
+			<option value="k.user_id ASC">COM_JBACKEND_HEADING_KEYS_USER_ID_ASC</option>
+			<option value="k.user_id DESC">COM_JBACKEND_HEADING_KEYS_USER_ID_DESC</option>
+			<option value="k.daily_requests ASC">COM_JBACKEND_HEADING_KEYS_DAILY_REQUESTS_ASC</option>
+			<option value="k.daily_requests DESC">COM_JBACKEND_HEADING_KEYS_DAILY_REQUESTS_DESC</option>
+			<option value="k.expiration_date ASC">COM_JBACKEND_HEADING_KEYS_EXPIRATION_DATE_ASC</option>
+			<option value="k.expiration_date DESC">COM_JBACKEND_HEADING_KEYS_EXPIRATION_DATE_DESC</option>
+			<option value="k.comment ASC">COM_JBACKEND_HEADING_KEYS_COMMENT_ASC</option>
+			<option value="k.comment DESC">COM_JBACKEND_HEADING_KEYS_COMMENT_DESC</option>
+			<option value="k.hits ASC">COM_JBACKEND_HEADING_KEYS_HITS_ASC</option>
+			<option value="k.hits DESC">COM_JBACKEND_HEADING_KEYS_HITS_DESC</option>
+			<option value="k.last_visit ASC">COM_JBACKEND_HEADING_KEYS_LAST_VISIT_ASC</option>
+			<option value="k.last_visit DESC">COM_JBACKEND_HEADING_KEYS_LAST_VISIT_DESC</option>
+			<option value="k.current_day ASC">COM_JBACKEND_HEADING_KEYS_CURRENT_DAY_ASC</option>
+			<option value="k.current_day DESC">COM_JBACKEND_HEADING_KEYS_CURRENT_DAY_DESC</option>
+			<option value="k.current_hits ASC">COM_JBACKEND_HEADING_KEYS_CURRENT_HITS_ASC</option>
+			<option value="k.current_hits DESC">COM_JBACKEND_HEADING_KEYS_CURRENT_HITS_DESC</option>
+		</field>
+		<field
+			name="limit"
+			type="limitbox"
+			class="inputbox input-mini"
+			default="25"
+			label="COM_JBACKEND_LIST_LIMIT"
+			description="COM_JBACKEND_LIST_LIMIT_DESC"
+			onchange="this.form.submit();"
+		/>
+	</fields>
+</form>

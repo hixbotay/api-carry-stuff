@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+	<fieldset addfieldpath="/administrator/components/com_bookpro/elements">
+	<fieldset name="user_details">
+		<field name="id" type="hidden" required="true"
+			readonly="true" />
+
+		<field id="name" name="name" type="text" required="true"
+			label="COM_BOOKPRO_CUSTOMER_NAME" description="COM_BOOKPRO_CUSTOMER_NAME"
+			class="input" size="40" />
+
+		<field id="email" name="email" type="email" required="true"
+			label="COM_BOOKPRO_CUSTOMER_EMAIL" description="COM_BOOKPRO_CUSTOMER_EMAIL"
+			class="input" size="40" />
+
+		<field id="address" name="address" type="text" required="false"
+			label="COM_BOOKPRO_CUSTOMER_ADDRESS" description="COM_BOOKPRO_CUSTOMER_ADDRESS"
+			class="input" size="40" />
+		<field id="city" name="city" type="text" required="false"
+			label="COM_BOOKPRO_CUSTOMER_CITY" description="COM_BOOKPRO_CUSTOMER_CITY"
+			class="input" size="40" />
+		<field id="post_code" name="post_code" type="text"
+			label="COM_BOOKPRO_CUSTOMER_POSTALCODE" description="COM_BOOKPRO_CUSTOMER_POSTALCODE"
+			class="input" size="40" />
+
+<!-- 		<field name="doc" type="file"
+
+            label="Upload file"
+            description="Upload file"  
+            directory="mysites" /> 
+ -->
+		<field id="mobile" name="mobile" type="text" required="false"
+			label="COM_BOOKPRO_CUSTOMER_MOBI" description="COM_BOOKPRO_CUSTOMER_MOBI"
+			class="input" size="40" />
+			
+		<field id="phone" name="phone" type="text" required="false"
+			label="COM_BOOKPRO_CUSTOMER_PHONE" description="COM_BOOKPRO_CUSTOMER_PHONE"
+			class="input" size="40" />
+	<!--  	<field id="password" name="password" type="text" required="false"
+			label="COM_BOOKPRO_CUSTOMER_PASSWORD" description="COM_BOOKPRO_CUSTOMER_PASSWORD"
+			class="input" size="40" /> -->
+			
+		<field name="password" type="password"
+			autocomplete="off"
+			class="validate-password"
+			description="COM_USERS_USER_FIELD_PASSWORD_DESC"
+			filter="raw"
+			validate="password"
+			label="JGLOBAL_PASSWORD"
+			size="30"
+		/>
+
+		<field name="password2" type="password"
+			autocomplete="off"
+			class="validate-password"
+			description="COM_BOOKPRO_CUSTOMER_PASSWORD_CONFIRM"
+			filter="raw"
+			label="COM_BOOKPRO_CUSTOMER_PASSWORD_CONFIRM"
+			message="COM_USERS_USER_FIELD_PASSWORD1_MESSAGE"
+			size="30"
+			validate="equals"
+			field="password"
+		/>
+		
+	</fieldset>		
+		<field id="company_name" name="company_name" type="text" required="false"
+			label="COM_BOOKPRO_CUSTOMER_COMPANY_NAME" description="COM_BOOKPRO_CUSTOMER_COMPANY_NAME"
+			class="input" size="40" />
+		
+		<field id="function" name="function" type="text" required="false"
+			label="COM_BOOKPRO_CUSTOMER_FUNCTION" description="COM_BOOKPRO_CUSTOMER_FUNCTION"
+			class="input" size="40" />
+			
+		<field id="user_type" name="user_type" type="list" required="false"
+			label="COM_BOOKPRO_CUSTOMER_TYPE" description="COM_BOOKPRO_CUSTOMER_TYPE"
+			class="input" size="40" >
+			<option value="1">COM_BOOKPRO_TYPE_PARTICULAR</option>
+			<option value="2">COM_BOOKPRO_TYPE_ENTERPRISE</option>
+			<option value="3">COM_BOOKPRO_TYPE_DRIVER</option>
+		</field>
+			
+		<field id="active_code" name="active_code" type="text" required="false" readonly="true"
+		label="COM_BOOKPRO_CUSTOMER_VALIDATE_CODE" description="COM_BOOKPRO_CUSTOMER_VALIDATE_CODE"
+		class="input" size="40" />
+		
+
+		<field id="registration_date" name="registration_date" type="calendar"
+			required="false" label="COM_BOOKPRO_CUSTOMER_REGISTRATION_DATE" description="COM_BOOKPRO_CUSTOMER_REGISTRATION_DATE"
+			class="input" size="40" format="%Y-%m-%d"/>
+			
+		
+
+		<field id="active" name="active" type="radio" class="btn-group" label="COM_BOOKPRO_CUSTOMER_VALIDATE_STATUS">
+			<option value="1">COM_BOOKPRO_CUSTOMER_ACTIVE</option>
+			<option value="0">COM_BOOKPRO_CUSTOMER_BLOCK</option>
+		</field>	
+		
+		<field name="state" type="list" label="JSTATUS" class="chzn-color-state"
+			size="1" default="1">
+			<option value="1">JPUBLISHED</option>
+			<option value="0">JUNPUBLISHED</option>
+		</field>
+
+	</fieldset>
+</form>

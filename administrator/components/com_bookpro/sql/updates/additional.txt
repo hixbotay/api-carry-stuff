@@ -1,0 +1,2 @@
+21/09/2018 17:11:44: 
+alter table #__bookpro_vehicle_type add state boolean default 1;

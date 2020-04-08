@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <fieldset addfieldpath="/administrator/components/com_bookpro/elements">
+    	<field name="id" type="hidden" class="readonly" label="JGLOBAL_FIELD_ID_LABEL" description="JGLOBAL_FIELD_ID_DESC" size="10" default="0" readonly="true" />    
+        
+    <field name="driver_id" type="customername" label="COM_BOOKPRO_DRIVER_NAME" size="60"
+              description="COM_BOOKPRO_DRIVER_NAME" required="true"/>
+        
+    <field name="name" type="text" label="COM_BOOKPRO_VEHICLES_NAME" size="60"
+              description="COM_BOOKPRO_VEHICLES_NAME" required="true"/>
+
+    <field name="vehicle_type_id" type="vehicletype" label="COM_BOOKPRO_VEHICLES_TYPE" size="60"
+              description="COM_BOOKPRO_VEHICLES_TYPE" required="true" />
+              
+    <field name="capacity" type="text" label="COM_BOOKPRO_VEHICLES_CAPACITY" size="60"
+              description="COM_BOOKPRO_VEHICLES_CAPACITY" />
+              
+    <field name="desc" type="editor" label="COM_BOOKPRO_VEHICLES_DESCRIPTION" size="60"
+              description="COM_BOOKPRO_VEHICLES_DESCRIPTION" />                    
+	
+	<field name="plate_number" type="text" label="COM_BOOKPRO_VEHICLES_PLATE_NUMBER" size="60"
+              description="COM_BOOKPRO_VEHICLES_PLATE_NUMBER" /> 
+              
+
+	<field name="current" type="list" label="COM_BOOKPRO_VEHICLES_CURRENT" description="COM_BOOKPRO_VEHICLES_CURRENT" class="inputbox small" size="1" default="1" >
+		<option value="0">NO</option>
+		<option value="1">YES</option>
+	</field>
+	<field name="default" type="list" label="COM_BOOKPRO_VEHICLES_DEFAULT" description="COM_BOOKPRO_VEHICLES_DEFAULT" class="inputbox small" size="1" default="1" >
+		<option value="0">NO</option>
+		<option value="1">YES</option>
+	</field>
+	
+    </fieldset>
+	
+</form>

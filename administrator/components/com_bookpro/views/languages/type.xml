@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language>
+	<admin>
+		<file name="com_bookpro.ini" title="com_bookpro.ini"/>
+		<file name="com_bookpro.sys.ini" title="com_bookpro.sys.ini"/>
+	</admin>
+	<site>
+		<file name="com_bookpro.ini" title="com_bookpro.ini" />
+		<file name="mod_jbflight_search.ini" title="com_bookpro.ini" />
+		<file name="com_bookpro_msg_group.ini" title="com_bookpro_mobile_response.ini" />
+	</site>
+</language>

@@ -1,0 +1,24 @@
+@CHARSET "ISO-8859-1";
+div#journey_sum .journey{
+	
+}
+div#journey_sum span{
+	display: block;
+	font-weight: bold;
+}
+.table_flight{
+	font-size: 12px;
+}
+div#journey span{
+	display: block;
+	font-weight: bold;
+}
+.btn-wrapper{
+	margin:4px;
+}
+.hasDatepicker {
+    background: rgba(0, 0, 0, 0) url("../images/calendar.gif") no-repeat scroll 99% 59% !important;
+    cursor: grab !important;
+    width: 105px;
+    cursor: grab;
+}

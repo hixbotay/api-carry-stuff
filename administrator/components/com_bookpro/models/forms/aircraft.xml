@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <fieldset>
+        <field name="id" type="hidden" readonly="true" />
+         <field name="title" type="text" class="inputbox" size="40" label="COM_BOOKPRO_AIRCRAFT_TITLE"
+            description="COM_BOOKPRO_AIRCRAFT_TITLE" required="true" />
+         
+         <field name="code" type="text" class="inputbox" size="40" label="COM_BOOKPRO_APP_CODE"
+            description="COM_BOOKPRO_APP_CODE" required="true" />
+         
+         <field name="seat" type="text" class="inputbox" size="40" label="COM_BOOKPRO_SEAT"
+            description="COM_BOOKPRO_SEAT" required="true" />
+         
+         <field name="weight" type="text" class="inputbox" size="40" label="COM_BOOKPRO_WEIGHT"
+            description="COM_BOOKPRO_WEIGHT_DESC" required="true" />
+         
+         <field name="desc" type="editor" buttons="true" hide="pagebreak,readmore" class="inputbox" 
+			filter="JComponentHelper::filterText" label="COM_BOOKPRO_APP_DESCRIPTION"
+            description="COM_BOOKPRO_APP_DESCRIPTION" />
+         
+         <field name="image" type="media" directory=""
+				hide_none="1" label="COM_BOOKPRO_AGENT_IMAGE"
+            	description="COM_BOOKPRO_AGENT_IMAGE" />
+         
+         <field name="agent_id" type="text" class="inputbox" size="40" label="COM_BOOKPRO_APP_AIRCRAFT_AGENT_ID"
+            description="COM_BOOKPRO_APP_AIRCRAFT_AGENT_ID" required="false" />         
+         
+         <field name="state" type="list"
+			label="JSTATUS" description="JFIELD_PUBLISHED_DESC"
+			class="inputbox small" size="1" default="1" >
+			<option value="1">JPUBLISHED</option>
+			<option value="0">JUNPUBLISHED</option>			
+		</field>
+         
+    </fieldset>
+</form>

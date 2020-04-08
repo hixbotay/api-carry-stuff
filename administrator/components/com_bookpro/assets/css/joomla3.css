@@ -1,0 +1,33 @@
+/*--------------------------*/
+ .sidebar-nav ul li 
+ {
+ line-height: 30px !important;
+ }
+ 
+ .sidebar-nav,.sidebar-nav .nav-list .dropdown-submenu ul
+ {
+ background:#222;
+ }
+ .sidebar-nav .nav-list > li > a ,.sidebar-nav .nav-list .dropdown-submenu > ul > li > a
+ {
+  color: #f4c012 !important;
+ }
+ 
+ .sidebar-nav .nav-list .dropdown-submenu a::after
+ {
+  content: none;
+ }
+ .sidebar-nav .nav-list .dropdown-submenu > ul > li
+ {
+  border:none;
+ }
+ 
+ .nav > li > a:hover, .sidebar-nav .nav-list .dropdown-submenu ul > li > a:hover
+ {
+  text-decoration: none;
+  background-color: #3498db !important;
+ }
+ .nav-list  > li > a, .sidebar-nav .nav-list .dropdown-submenu ul > li > a
+ {
+ background: url("../images/arrow.png") no-repeat scroll 90% 50% rgba(0, 0, 0, 0) !important;
+ }

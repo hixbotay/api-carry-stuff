@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.2" method="upgrade">
+
+	<name>com_bookpro</name>
+	<creationDate>June 2011</creationDate>
+	<author>Ngo Van Quan</author>
+	<authorEmail>quan@joombooking.com</authorEmail>
+	<authorUrl>http://joombooking.com</authorUrl>
+	<copyright>http:://joombooking.com</copyright>
+	<license>GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
+	<version>2.3.2</version>
+	<description>Flight booking component for Joomla 3</description>
+	<languages folder="language/site">
+		<language tag="en-GB">en-GB/en-GB.com_bookpro.ini</language>
+		<language tag="fr-FR">fr-FR/fr-FR.com_bookpro.ini</language>
+	</languages>
+	<scriptfile>script.php</scriptfile>
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.sql</file>
+		</sql>
+	</install>
+	<update>
+        <schemas>
+            <schemapath type="mysql">sql/updates/mysql</schemapath>
+        </schemas>
+    </update>
+	<uninstall>
+		<sql>
+			<file charset="utf8" driver="mysql">sql/uninstall.sql</file>
+		</sql>
+	</uninstall>
+
+	<files folder="site">
+		<folder>views</folder>
+		<folder>classes</folder>
+		<folder>models</folder>
+		<folder>layouts</folder>
+		<folder>assets</folder>
+		<folder>libraries</folder>
+		<folder>controllers</folder>
+		<filename>index.html</filename>
+		<filename>bookpro.php</filename>
+		<filename>controller.php</filename>
+		<filename>router.php</filename>
+	</files>
+
+	<administration>
+		<!-- Administration Menu Section -->
+		<menu>COM_BOOKPRO_ADMIN_MENU_NAME</menu>
+		<languages folder="language/admin">
+			<language tag="en-GB">en-GB/en-GB.com_bookpro.ini</language>
+			<language tag="en-GB">en-GB/en-GB.com_bookpro.sys.ini</language>
+		</languages>
+		<files folder="admin">
+			<folder>assets</folder>
+			<folder>classes</folder>
+			<folder>controllers</folder>
+			<folder>elements</folder>
+			<folder>helpers</folder>
+			<folder>models</folder>
+			<folder>sql</folder>
+			<folder>tables</folder>
+			<folder>views</folder>
+			<filename>bookpro.php</filename>
+			<filename>controller.php</filename>
+			<filename>config.xml</filename>
+			<filename>defines.php</filename>
+			<filename>access.xml</filename>
+			<filename>index.html</filename>
+		</files>
+	</administration>
+	<plugins>
+    	<plugin plugin="payment_offline" group="bookpro"/> 
+    	<plugin plugin="payment_paypal" group="bookpro"/>    
+  	</plugins>
+  	<modules>
+    	<module module="mod_jbflight_search"/> 
+ 	</modules>
+	<config>
+		<fields>
+			<fieldset>
+			
+				<field name="business" default="0" />
+				<field name="economy" default="0" />
+				<field name="date_format" default="%Y-%m-%d" />
+				<field name="main_currency" default="USD" />
+				<field name="currency_symbol" default="$" />
+				<field name="currency_display" default="1" />
+				<field name="currency_seperator" default="" />
+				<field name="term_content_id" default="" />
+				<field name="images" default="/images/bookpro" />
+								
+				<field name="rs_firstname" default="1" />
+				<field name="rs_lastname" default="1" />
+				<field name="rs_email" default="1" />
+				<field name="rs_mobile" default="1" />
+				<field name="rs_zip" default="0" />
+				<field name="rs_states" default="0" />
+				<field name="rs_fax" default="0" />
+				<field name="rs_country" default="1" />
+				
+				<field name="ps_group" default="1" />
+				<field name="ps_gender" default="1" />
+				<field name="ps_firstname" default="1" />
+				<field name="ps_lastname" default="1" />
+				<field name="ps_birthday" default="1" />
+				<field name="ps_passport" default="1" />
+				<field name="ps_ppvalid" default="0" />
+				<field name="ps_bag" default="0" />
+				
+				<field name="allow_reservations" default="1" />
+				<field name="customers_usergroup" default="2" />
+				<field name="passenger_status" default="1" />
+				
+				<field name="company_name" default="Your company name" />
+				<field name="company_address" default="Your company address-xxx" />
+					
+			</fieldset>
+		</fields>
+	</config>
+</extension>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <fieldset addfieldpath="/administrator/components/com_bookpro/elements">
+    	<field name="id" type="hidden" class="readonly" label="JGLOBAL_FIELD_ID_LABEL" description="JGLOBAL_FIELD_ID_DESC" size="10" default="0" readonly="true" />    
+        <field name="recipient_info" type="text" label="COM_BOOKPRO_ORDERS_RECIPIENT_INFO" size="60"
+              description="COM_BOOKPRO_ORDERS_RECIPIENT_INFO" />
+        
+        <field name="driver_id" type="customername" label="COM_BOOKPRO_DRIVER_NAME" size="60"
+              description="COM_BOOKPRO_DRIVER_NAME" />
+              
+        <field name="note" type="textarea" label="COM_BOOKPRO_NOTE" rows="10" cols="30" description="COM_BOOKPRO_ORDER_NOTE_DESC" />
+           
+        <field name="order_number" type="text" default="0" label="COM_BOOKPRO_ORDER_NUMBER" size="60"
+            readonly="true" class="readonly" description="COM_BOOKPRO_ORDER_NUMBER"/>
+   		
+   		<!--<field name="transport_type" type="transporttype"  label="COM_BOOKPRO_TRANSPORT_TYPE_MANAGER" description="COM_BOOKPRO_TRANSPORT_TYPE_MANAGER" required="true"/>
+   --><field name="transport_type_id" type="list" label="COM_BOOKPRO_TRANSPORT_TYPE_MANAGER" size="1"
+              description="COM_BOOKPRO_TRANSPORT_TYPE_MANAGER" >
+			<option value="1">Express</option>
+			<option value="2">Standard</option>	
+	</field>
+	<field name="vehicle_type_id" type="vehicletype" label="COM_BOOKPRO_VEHICLES_TYPE_TITLE" size="60"
+              description="COM_BOOKPRO_VEHICLES_TYPE_TITLE" required="true"/>
+	<field name="receiver_name" type="text" label="COM_BOOKPRO_RECEIVER_NAME" description="COM_BOOKPRO_RECEIVER_NAME" required="false"/>
+              
+    <field name="is_paid" type="radio" label="COM_BOOKPRO_ORDERS_PAY_STATUS" size="1"
+              description="COM_BOOKPRO_ORDERS_PAY_STATUS" required="true" class="btn-group">
+			<option value="1">Paided</option>
+			<option value="0">Not paid</option>	
+	</field>
+	<field name="is_booked" type="radio" label="COM_BOOKPRO_ORDERS_ORDER_TYPES" size="1"
+              description="COM_BOOKPRO_ORDERS_ORDER_TYPES" required="true" class="btn-group">
+			<option value="0">Order</option>
+			<option value="1">Booking</option>	
+	</field>
+	<field name="is_cancelled" type="radio" label="COM_BOOKPRO_ORDERS_IS_CANCELLED" size="1"
+              description="COM_BOOKPRO_ORDERS_IS_CANCELLED" class="btn-group">
+			<option value="0">No</option>
+			<option value="1">Yes</option>	
+	</field>
+	<field name="is_accepted" type="radio" label="COM_BOOKPRO_ORDERS_IS_ACCEPT" size="1"
+              description="COM_BOOKPRO_ORDERS_IS_ACCEPT" required="true" class="btn-group">
+			<option value="0">No</option>
+			<option value="1">Yes</option>	
+	</field>
+	<field name="recipient_validate" type="radio" label="COM_BOOKPRO_ORDER_RECEIPIET_VALIDATE" size="1"
+              description="COM_BOOKPRO_ORDER_RECEIPIET_VALIDATE" required="true" class="btn-group">
+			<option value="0">No</option>
+			<option value="1">Yes</option>	
+	</field>
+	<field id="trip_start_time" name="trip_start_time" type="calendar"
+			required="false" label="COM_BOOKPRO_ORDERS_TRIP_START_TIME" description="COM_BOOKPRO_ORDERS_TRIP_START_TIME"
+			class="input" size="40" format="%d-%m-%Y"/>
+			
+	<field id="start_time" name="start_time" type="calendar"
+			required="false" label="COM_BOOKPRO_ORDERS_START_TIME" description="COM_BOOKPRO_ORDERS_START_TIME"
+			class="input" size="40" format="%d-%m-%Y"/>
+			
+	<field id="end_time" name="end_time" type="calendar"
+			required="false" label="COM_BOOKPRO_ORDERS_END_TIME" description="COM_BOOKPRO_ORDERS_END_TIME"
+			class="input" size="40" format="%d-%m-%Y"/>
+    <field name="packages" type="text" label="COM_BOOKPRO_ORDERS_PACKAGES" size="60"
+              description="COM_BOOKPRO_ORDERS_PACKAGES" />          
+    <field name="customer" type="text" label="COM_BOOKPRO_ORDERS_CUSTOMER_ID" size="60"
+              description="COM_BOOKPRO_ORDERS_CUSTOMER_ID" />
+              
+    <field name="name" type="text" label="COM_BOOKPRO_ORDERS_CUSTOMER_NAME" size="60"
+              description="COM_BOOKPRO_ORDERS_CUSTOMER_NAME" />                   
+	
+	<field name="trip_status" type="list" label="COM_BOOKPRO_ORDERS_TRIP_STATUS" size="1"
+              description="COM_BOOKPRO_ORDERS_TRIP_STATUS" required="true" default="NEW">
+			<option value="2">End</option>
+			<option value="1">Running</option>
+			<option value="0">Not yet started</option>		
+	</field>
+	
+	
+	 <field name="notify_customer" type="radio" label="COM_BOOKPRO_ORDER_NOTIFY_TO_CUSTOMER" description="COM_BOOKPRO_ORDER_NOTIFY_TO_CUSTOMER"
+			labelclass="control-label" size="2" default="true">
+			<option value="false">No</option>
+			<option value="true">Yes</option>
+						
+		</field>
+	 <field name="distance" type="text" id="distance" label="COM_BOOKPRO_ORDERS_DISTANCE" size="60"
+              description="COM_BOOKPRO_ORDERS_DISTANCE" />
+              
+	 <field name="total" type="text" id="total" label="COM_BOOKPRO_ORDERS_TOTAL" size="60"
+              description="COM_BOOKPRO_ORDERS_TOTAL" />
+	 
+	 <field name="discount" type="text" id="discount" default="0" label="COM_BOOKPRO_ORDER_DISCOUNT" size="60"
+              description="COM_BOOKPRO_ORDER_DISCOUNT" />
+	 
+	 <field name="tx_id" type="text" id="tx_id" label="COM_BOOKPRO_ORDER_TRANSACTION_ID" size="60"
+              description="COM_BOOKPRO_ORDER_TRANSACTION_ID" />
+	 
+	 <field name="delivery_code" type="text" label="COM_BOOKPRO_ORDER_DELIVERY_CODE" size="60"
+              description="COM_BOOKPRO_ORDER_DELIVERY_CODE" />
+	 
+     <field name="state" type="list" label="JSTATUS" description="JFIELD_PUBLISHED_DESC" class="inputbox small" size="1" default="1" >
+		<option value="1">JPUBLISHED</option>
+		<option value="0">JUNPUBLISHED</option>
+		<option value="2">JARCHIVED</option>
+		<option value="-2">JTRASHED</option>
+		</field>
+	
+
+    <field name="from" type="text" id="from" label="COM_BOOKPRO_ORDER_FROM" size="60"
+              description="COM_BOOKPRO_ORDER_FROM" />
+	<field name="to" type="text" id="to" label="COM_BOOKPRO_ORDER_TO" size="60"
+              description="COM_BOOKPRO_ORDER_TO" />
+                  </fieldset>
+    <field name="created_time" type="text" readonly="readonly" id="created_time" label="COM_BOOKPRO_ORDERS_CREATED_TIME" size="60"
+              description="COM_BOOKPRO_ORDERS_CREATED_TIME" />              
+</form>

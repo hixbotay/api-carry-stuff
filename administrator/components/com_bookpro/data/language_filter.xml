@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language>
+	<admin>
+		<file name="com_bookpro.ini" title="com_bookpro.ini"/>
+		<file name="com_bookpro.sys.ini" title="com_bookpro.sys.ini"/>
+	</admin>
+	<site>
+		<file name="com_bookpro.ini" title="com_bookpro.ini" />
+	</site>
+</language>

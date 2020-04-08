@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config addfieldpath="/administrator/components/com_bookpro/elements">
+	
+	<fieldset name="MainSettings" label="Main Settings">
+					
+		<field name="main_currency" type="text" label="MAIN_CURRENCY" default="USD" description="MAIN_CURRENCY_DESC"/>
+		<field name="main_currency_text" type="text" label="MAIN_CURRENCY_TEXT" default="euros" description="MAIN_CURRENCY_TEXT_DESC"/>
+		<field name="currency_symbol" type="text" label="HLP_CURRENCY_SYMBOL" default="$" description="HLP_CURRENCY_SYMBOL_DESC"/>
+		<field name="distance_symbol" type="text" label="HLP_DISTANCE_SYMBOL" default="km" description="HLP_DISTANCE_SYMBOL_DESC"/>
+		
+		<field type="radio" name="formatHours" default="12" label="Time format" class="btn-group">
+				<option value="12">12</option>
+				<option value="24">24</option>
+		</field>
+		
+		<field type="Transporttype" name="transport_type_default" label="Default transport type" description="Default transport type" />
+
+		<field type="list" name="date_format_type" default="Y-m-d" label="Date format Short" description="HLP_DATE TYPE" class="btn-group">
+			<option value="Y-m-d">Y-m-d</option>
+			<option value="d-m-Y">d-m-Y</option>
+			<option value="m-d-Y">m-d-Y</option>
+		</field>
+		
+		<field name="vat" type="text" value="10" label="COM_BOOKPRO_CONFIG_FIELD_VAT"/>
+		
+		
+		
+	</fieldset>
+	
+	<fieldset name="TimeSetting" label="Client setting">
+		<field name="soonest_booking_time" type="number" label="Soonest booking time" description="Soonest time before user create a booking. If it is null it will not be limited(minute)" default="30"/>
+		<field name="latest_booking_time" type="number" label="Latest booking time" description="Latest time before user create a booking. (minute)" default=""/>
+		<field name="timeout_online" type="number" label="Driver online timeout" description="Time to caculate driver online (s)" default="5"/>
+		<field name="timeout_driver" type="number" label="Driver candidate timeout" description="Time for driver response when an order is created (s)" default="10"/>
+		<field name="timeout_order" type="number" label="Creating order timeout" description="Order will be cancelled if there are no driver accept at a time (s)" default="60"/>
+		<field name="timeout_order_after_accept" type="number" label="Cancelling order after accept" description="Order will be cancelled after driver accept order with the period (s)" default="120"/>
+		<field name="period_app" type="note" label="Period of app to call server"/>
+		<field name="update_location_period" type="text" label="Update location period" description="Time of an update location call from app to server(s)" default="5"/>
+		<field name="get_order_period" type="text" label="Get closest order period" description="Time of an get order call from app to server (s)" default="5"/>
+	</fieldset>
+	
+	<fieldset name="Display" label="Display">
+		
+				
+		<field type="list" name="currency_display" label="HLP_CURRENCY_DISPLAY"
+			default="0">
+			<option value="0">00Symb</option>
+			<option value="1">00 Symb</option>
+			<option value="2">Symb00</option>
+			<option value="3">Symb 00</option>
+		</field>
+		
+		<field name="currency_seperator" type="text" label="HLP_CURRENCY_SEPERATOR"/>
+		
+		<field name="currency_decimalpoint" type="text" label="COM_BOOKPRO_CURRENCY_DECIMALPOINT" default="2"/>
+		
+		
+	</fieldset>
+	
+	<fieldset name="AccountSetting" label="Account Setting">
+		
+		<field name="allow_reservations" type="list" default="1"
+			label="Reservation Permission">
+			<option value="0">Registered</option>
+			<option value="1">Unregistered</option>
+		</field>
+		<field name="customers_usergroup" type="usergroup" label="Customers user group" />
+		<field name="google_key" type="text" label="Google API key" />
+		
+
+	</fieldset>
+	
+
+	
+
+		
+	
+	<!--
+	<fieldset name="Registration" label="Registration">
+		<field name="bookpro_key" type="text" label="License key"
+			description="" size="50" />
+		<field name="hostname" type="text" label="Domain Name"
+			description="" size="50" />
+	</fieldset>
+	-->
+
+<fieldset name="permissions"
+		description="JCONFIG_PERMISSIONS_DESC"
+		label="JCONFIG_PERMISSIONS_LABEL">
+	<field name="rules" type="rules"
+			component="com_bookpro"
+			filter="rules"
+			validate="rules"
+			label="JCONFIG_PERMISSIONS_LABEL"
+			section="component" />
+	</fieldset>
+</config>
